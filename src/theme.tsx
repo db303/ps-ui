@@ -10,9 +10,14 @@ const breakpoints = createBreakpoints({
   xl: '80em',
 })
 
+const radii = {
+  md: 'none'
+}
+
 const theme = extendTheme({
   fonts,
   breakpoints,
+  radii
 })
 
 export default theme
