@@ -26,7 +26,7 @@ const Header: React.FC<HeaderProps> = ({}) => {
       borderColor={'grey'}
     >
       <Flex w='1440px' px={5}>
-        <Logo color={'white'}/>
+        <Logo />
         <Spacer />
         <Stack
           flex={{ base: 1, md: 0 }}

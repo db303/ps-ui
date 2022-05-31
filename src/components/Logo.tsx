@@ -2,15 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import {
   Box,
-  Heading,
   Flex,
-  useColorModeValue,
-  useBreakpointValue,
 } from '@chakra-ui/react';
 
-interface LogoProps {
-  color: 'white' | 'black'
-}
+interface LogoProps {}
 
 const Logo: React.FC<LogoProps> = () => (
   <Link href='/'>
@@ -19,7 +14,7 @@ const Logo: React.FC<LogoProps> = () => (
         <Box height={30}>
           <img
             style={{height: '100%'}}
-            src={useColorModeValue('/ps-logo-black-v1.svg', '/ps-logo-white-v1.svg')}
+            src={'/ps-logo-white-v1.svg'}
             alt='Pattern Saver' />
         </Box>
       </Flex>
