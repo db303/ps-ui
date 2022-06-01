@@ -4,10 +4,11 @@ import FormAlert from './FormAlert'
 
 interface AuthPageLayoutProps {
   title: string
-  errorMessage: string
+  errorTitle: string
+  errorDescription: string
 }
 
-const AuthPageLayout: React.FC<AuthPageLayoutProps> = ({ children, errorMessage, title }) => {
+const AuthPageLayout: React.FC<AuthPageLayoutProps> = ({ children, errorTitle, errorDescription, title }) => {
   return (
     <Flex
       minH={'calc(100vh - 57px)'}
@@ -19,7 +20,7 @@ const AuthPageLayout: React.FC<AuthPageLayoutProps> = ({ children, errorMessage,
         <Stack align={'center'}>
           <Heading fontSize={'4xl'}>{ title }</Heading>
         </Stack>
-        { errorMessage && <FormAlert title={errorMessage} />}
+        { errorTitle && <FormAlert title={errorTitle} description={errorDescription} />}
         <Box
           bg={'black'}
           p={8}

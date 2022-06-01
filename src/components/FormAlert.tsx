@@ -3,10 +3,10 @@ import {
   Alert,
   AlertTitle,
   AlertDescription,
-  AlertIcon 
+  Stack,
 } from '@chakra-ui/react'
 
-interface FormAlertProps {
+export interface FormAlertProps {
   title: string,
   description?: string
 }
@@ -14,9 +14,10 @@ interface FormAlertProps {
 const FormAlert: React.FC<FormAlertProps> = ({title, description}) => {
   return (
     <Alert status='error' variant='left-accent' color='crimson' borderLeftColor='crimson'>
-      <AlertIcon color='crimson' />
-      <AlertTitle>{title}</AlertTitle>
-      {description && <AlertDescription>{description}</AlertDescription> }
+      <Stack pl={5}>
+        <AlertTitle>{title}</AlertTitle>
+        <AlertDescription>{description}</AlertDescription>
+      </Stack>
     </Alert>)
 }
 
