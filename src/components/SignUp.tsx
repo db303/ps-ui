@@ -167,8 +167,9 @@ const SignUp: React.FC<SignUpProps> = () => {
           />
           <Stack spacing={10} pt={2}>
             <Button
-              type="submit"
-              loadingText="Submitting"
+              type='submit'
+              variant='outline'
+              loadingText='Submitting'
               isLoading={isPostingSignUp}
               >
               Register

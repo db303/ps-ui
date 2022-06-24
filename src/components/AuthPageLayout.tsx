@@ -4,8 +4,8 @@ import FormAlert from './FormAlert'
 
 interface AuthPageLayoutProps {
   title: string
-  errorTitle: string
-  errorDescription: string
+  errorTitle?: string
+  errorDescription?: string
 }
 
 const AuthPageLayout: React.FC<AuthPageLayoutProps> = ({ children, errorTitle, errorDescription, title }) => {

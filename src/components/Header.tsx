@@ -33,13 +33,13 @@ const Header: React.FC<HeaderProps> = ({}) => {
           justify={'flex-end'}
           direction={'row'}
           spacing={6}>
-            <Link href='/signin' passHref>
+            <Link href='/auth/signin' passHref>
               <Button
                 as='a'
                 variant='link'
               >Log In</Button>
             </Link>
-            <Link href='/signup' passHref>
+            <Link href='/auth/signup' passHref>
               <Button>Register</Button>
             </Link>
   
